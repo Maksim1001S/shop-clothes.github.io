@@ -1,0 +1,58 @@
+.top_header {
+    background-color: $dark_color;
+
+    &_wrap {
+    display: flex;
+    justify-content: space-between;
+    }
+}
+
+.top_left_nav {
+    margin-top: 18px;
+
+    a:first-child {
+        margin-right: 41px;
+    }
+}
+
+.top_right_nav {
+    margin-bottom: 20px;
+    margin-top: 25px;
+    display: flex;
+    align-items: flex-end;
+    
+    a {
+        margin-right: 33px;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+}
+
+.box_basket_mask {
+    position: relative;
+}
+
+.nomber_goods {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 19px;
+    height: 19px;
+    border-radius: 100px;
+    background-color: $main_color;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_hover {
+    fill: #FFFFFF;
+    &:hover svg {
+        fill: $main_color;
+    }
+}

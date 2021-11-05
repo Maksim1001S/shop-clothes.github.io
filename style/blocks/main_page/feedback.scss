@@ -1,0 +1,64 @@
+.feedback {
+    background-image: url(../img/footer_bg.jpg);
+    min-height: 448px;
+    padding: 97px 0 154px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &_wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+
+.reviews {
+    text-align: center;
+
+    &_text {
+        max-width: 360px;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: $dark_color;
+        margin-top: 30px;
+    }
+}
+
+.subscribe_title {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 167.2%;
+    text-align: center;
+
+    &::first-line {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 167.2%;
+        text-align: center;
+        color: $dark_color;
+    }
+}
+
+.subscribe_form {
+    display: flex;
+    margin-top: 32px;
+    justify-content: center;
+
+    &_field {
+        border: none;
+        background-color: #E1E1E1;;
+        padding: 18px;
+        border-radius: 23px 0 0 23px;
+    
+    }
+    &_button {
+        background-color: $main_color;
+        color: #FFFFFF;
+        border: none;
+        padding: 18px;
+        border-radius: 0 23px 23px 0;
+    }
+}

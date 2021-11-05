@@ -1,0 +1,50 @@
+button {
+    cursor: pointer;
+}
+
+.pagination {
+	display: flex;
+	justify-content: center;
+	padding: 20px 0;
+
+    &button {
+        cursor: pointer;
+    }
+    &-list {
+        margin: 0;
+        list-style: none;
+        display: flex;
+        gap: 20px;	
+        border: 1px solid #EBEBEB;
+        border-radius: 5px;
+        padding: 13px 16px;
+    }
+    &-item--separator {
+        margin: 0 -20px;
+        align-items: flex-end;
+        display: flex;
+        color: #C4C4C4;
+        cursor: context-menu;
+    }
+    &-link {
+        border: none;
+        background-color: #FFFFFF;
+        font-size: 16px;
+        line-height: 19px;
+        color: #C4C4C4;
+        &:hover {
+            color: $main_color;
+    
+            svg {
+                fill: $main_color;
+            }
+        }
+    }
+    &_right_arrow {
+        transform: rotate(180deg);
+    }
+}
+
+.active > .pagination-link {
+    color: $main_color;
+}

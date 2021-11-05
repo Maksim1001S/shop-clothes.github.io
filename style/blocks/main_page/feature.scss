@@ -1,0 +1,29 @@
+.feature {
+    min-height: 341px;
+    background-color: $dark_color;
+    padding: 104px 0px;
+
+    &_wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    &_container {
+        text-align: center;
+    }
+    &_img_box {
+        height: 40px;
+        margin-bottom: 19px;
+    }
+    &_title {
+        font-weight: normal;
+        font-size: 19.96px;
+        line-height: 24px;
+        color: #FBFBFB;
+    }
+    &_text {
+        margin-top: 16px;
+        color: #FBFBFB;
+        width: 360px;
+        padding: 0px 30px;
+    }
+}

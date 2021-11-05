@@ -1,0 +1,43 @@
+.footer {
+    background-color: $dark_color;
+    padding: 30px 0;
+    min-height: 79px;
+
+    &_wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.rights {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+}
+
+.social_icons_list {
+    display: flex;
+    gap: 7px;
+}
+
+.social_icons_items {
+    list-style-type: none;
+    background-color: #fff;
+
+    a {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover{
+            fill: #fff;
+        }
+    }
+    &:hover {
+        background-color: $main_color;
+    }
+}

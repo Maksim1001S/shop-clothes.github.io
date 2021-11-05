@@ -1,0 +1,74 @@
+.top_header {
+  background-color: #222222;
+}
+
+.top_header_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top_left_nav {
+  margin-top: 18px;
+}
+
+.top_left_nav a:first-child {
+  margin-right: 41px;
+}
+
+.top_right_nav {
+  margin-bottom: 20px;
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.top_right_nav a {
+  margin-right: 33px;
+}
+
+.top_right_nav a:last-child {
+  margin-right: 0px;
+}
+
+.box_basket_mask {
+  position: relative;
+}
+
+.nomber_goods {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  width: 19px;
+  height: 19px;
+  border-radius: 100px;
+  background-color: #F16D7F;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu_hover {
+  fill: #E8E8E8;
+}
+
+.menu_hover :hover {
+  fill: #F16D7F;
+}
+/*# sourceMappingURL=header.css.map */

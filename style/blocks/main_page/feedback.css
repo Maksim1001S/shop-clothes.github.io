@@ -1,0 +1,75 @@
+.feedback {
+  background-image: url(../img/footer_bg.jpg);
+  min-height: 448px;
+  padding: 97px 0 154px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feedback_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.reviews {
+  text-align: center;
+}
+
+.reviews_text {
+  max-width: 360px;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #222224;
+  margin-top: 30px;
+}
+
+.subscribe_title {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 167.2%;
+  text-align: center;
+}
+
+.subscribe_title ::first-line {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 167.2%;
+  text-align: center;
+  color: #222224;
+}
+
+.subscribe_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 32px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.subscribe_form_field {
+  border: none;
+  background-color: #E1E1E1;
+  padding: 18px;
+  border-radius: 23px 0 0 23px;
+}
+
+.subscribe_form_button {
+  background-color: #F16D7F;
+  color: #FFFFFF;
+  border: none;
+  padding: 18px;
+  border-radius: 0 23px 23px 0;
+}
+/*# sourceMappingURL=feedback.css.map */

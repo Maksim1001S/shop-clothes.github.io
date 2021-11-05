@@ -1,0 +1,35 @@
+.promo {
+    background-color: #F1E4E6;
+
+    &_wrap {
+        display: flex;
+        justify-content: flex-end;
+        background-image: url(../img/promo_bg.png);
+        height: 764px;
+        background-repeat: no-repeat;
+        background-position-x: -225px;
+    }
+    &_title {
+        margin-top: 290px;
+        margin-bottom: auto;
+        padding-left: 16px;
+        border-left: 12px solid $main_color;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 38px;
+        color: $dark_color;
+
+        &_bold {
+            font-weight: 900;
+            font-size: 48px;
+            line-height: 58px;
+            color: $dark_color;
+        }
+        &_pink {
+            color: $main_color;
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 38px;
+        }
+    }
+}
