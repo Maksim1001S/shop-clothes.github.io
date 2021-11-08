@@ -3,8 +3,7 @@
 	background-color: #F8F3F4;
 
     &_wrap {
-        display: flex;
-        justify-content: space-between;
+        @include wrap_center();
     }
     &_title {
         font-weight: normal;
@@ -13,9 +12,7 @@
         color: $main_color;
     }
     &-list {
-        list-style: none;
-        margin: 0;
-        padding: 0;
+        @include list();
         display: flex;
         gap: 20px;
     }

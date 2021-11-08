@@ -1,0 +1,11 @@
+@mixin list() {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin wrap_center($justify-content: space-between, $align-items: center) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
