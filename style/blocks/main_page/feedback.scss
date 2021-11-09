@@ -52,7 +52,6 @@
         background-color: #E1E1E1;;
         padding: 18px;
         border-radius: 23px 0 0 23px;
-    
     }
     &_button {
         background-color: $main_color;
@@ -60,5 +59,12 @@
         border: none;
         padding: 18px;
         border-radius: 0 23px 23px 0;
+        cursor: pointer;
+        transition-property: background-color;
+        transition-duration: 0.3s;
+
+        &:hover {
+            background-color: #d55869;
+        }
     }
 }
