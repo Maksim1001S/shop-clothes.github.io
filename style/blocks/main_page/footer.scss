@@ -24,20 +24,19 @@
 
 .social_icons_items {
     list-style-type: none;
-    background-color: #fff;
-
     a {
+        background-color: #fff;
         width: 32px;
         height: 32px;
         display: flex;
         justify-content: center;
         align-items: center;
-
+        transition-property: background-color, transform;
+        transition-duration: 0.3s;
         &:hover{
             fill: #fff;
+            background-color: $main_color;
+            transform: rotate(360deg);
         }
-    }
-    &:hover {
-        background-color: $main_color;
     }
 }

@@ -25,9 +25,14 @@
         min-height: 420px;
         background-color: #F8F8F8;
         list-style-type: none;
+        position: relative;
 
         a {
             text-decoration: none;
+        }
+
+        &:hover .products_overlay {
+            transform: scaleY(1);
         }
     }
 }
@@ -66,12 +71,52 @@
     padding: 15px 39px;
     display: inline-block;
     margin-top: 63px;
+    transition-property: background-color, transform;
+    transition-duration: 0.3s;
 
     &:hover {
         color: #fff;
         background-color: $main_color;
+        transform: scale(1.1) translateY(-10%);
     }
 }
 .video-bg {
     object-fit: cover;
+}
+
+.products_overlay {
+    position: absolute;
+    width: 100%;
+    height: 420px;
+    background-color: rgba(58, 56, 56, 0.86);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scaleY(0);
+    transition-property: transform;
+    transform-origin: center top;
+    transition-duration: 0.5s;
+}
+
+.bth_add {
+    background-color: transparent;
+    padding: 20px 30px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    transition-property: transform, background-color;
+    transition-duration: 0.3s, 0.5s;
+
+    &_img {
+        vertical-align: middle;
+        margin-right: 11px;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+        background-color: rgba(58, 56, 56, 0.73);
+    }
 }

@@ -52,7 +52,21 @@
 
 .nav_hover {
     fill: #FFFFFF;
+    & svg {
+        transition-property: fill;
+        transition-duration: 0.3s;
+    }
     &:hover svg {
         fill: $main_color;
     }
+}
+
+.logo {
+    animation: bounce 3s infinite alternate;
+}
+
+@keyframes bounce {
+    0% {transform: rotate(0.3turn);}
+    50% {}
+    100% {transform: rotate(-0.03turn);}
 }
