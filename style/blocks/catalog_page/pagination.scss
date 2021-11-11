@@ -32,9 +32,11 @@ button {
         font-size: 16px;
         line-height: 19px;
         color: #C4C4C4;
+        transition-property: color;
+        transition-duration: 0.3s;
+
         &:hover {
             color: $main_color;
-    
             svg {
                 fill: $main_color;
             }

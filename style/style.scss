@@ -86,7 +86,6 @@ body {
 @import "blocks/catalog_page/pagination.scss";
 //   pagination
   
-
 // PRODUCT PAGE
 
 .margin_product_page {
@@ -100,8 +99,6 @@ body {
     align-items: center;
     min-height: 365px;
     background-color: #F7F7F7;
-    &_img {
-    }
 }
 
 .slider-bth {
@@ -171,16 +168,9 @@ body {
 
 .product_atribut {
     max-width: 400px;
-}
-
-.product_atribut_container {
-    display: flex;
     justify-content: space-between;
-
-    &_item{
-        display: flex;
-        justify-content: space-between;
-    }
+    display: flex;
+    margin-top: 64px;
 }
 
 summary {
@@ -192,26 +182,62 @@ summary {
     }
 }
 
-.product_atribut_container_item {
+.details_product_atribut {
     color: #6F6E6E;
-    display: flex;
     align-items: center;
     margin-right: 15px;
-    margin-top: 64px;
 
     &:last-child {
+        margin-right: 0;
     }
-    &::after {
-        content: '';
-        width: 10px;
-        height: 8px;
-        display: inline-block;
-        padding-right: 0.5em;
-        background-repeat: no-repeat;
-        background-image: url(../img/marker_row.svg);
-        margin-left: 10px;
+    &_title {
+        &::after {
+            content: '';
+            width: 10px;
+            height: 8px;
+            display: inline-block;
+            padding-right: 0.5em;
+            background-repeat: no-repeat;
+            background-image: url(../img/marker_row.svg);
+            margin-left: 9px;
+        }
+    }
+    &_drop {
+        position: absolute;
+        z-index: 10;
+        background-color: #fff;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px ;
+        margin-top: 5px;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        color: $main_color;
+
+        &_radio {
+            margin-bottom: 7px;
+            margin-right: 4px;
+            color: green;
+
+        }
     }
 }
+
+input[type="radio"] {
+    width: 12px;
+    height: 12px;
+    &:checked:before{
+        content: "";
+        display: block;
+        position: relative;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: $main_color;
+    }
+}
+
 
 .add_to_cart_product {
     border: 1px solid $main_color;

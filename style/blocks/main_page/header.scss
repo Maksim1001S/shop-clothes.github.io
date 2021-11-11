@@ -65,6 +65,85 @@
     animation: bounce 3s infinite alternate;
 }
 
+
+.main_nav {
+    position: absolute;
+    right: 0;
+    top: 77px;
+    width: 232px;
+    height: 764px;
+    padding: 35px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    color: #000;
+    transform-origin: top right;
+    transition: 0.5s;
+
+    &--close {
+        transform: scale(0);
+    }
+    &--open {
+        transform: scaleY(1);
+    }
+    &_box {
+        position: relative;
+    }
+    &_close{
+        position: absolute;
+        background-color: transparent;
+        border: none;
+        right: -20px;
+        top: -20px;
+        fill: #6F6E6E;
+        transition-property: fill, transform;
+        transition-duration: 0.3s;
+
+        &:hover {
+            transform: rotate(90deg) scale(1.1);
+            fill: $main_color;
+        }
+    } 
+    &_title {
+        font-weight: bold;
+        color: #000000;
+        margin-bottom: 24px;
+    }
+    &_list {
+        list-style-type: none;
+    }
+    &_link {
+        color: $main_color;
+        text-decoration: none;
+        position: relative;
+
+        @include animation_under_line();
+    }
+}
+
+.submenu_list {
+    list-style-type: none;
+    gap: 11px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 12px 0px 20px 21px;
+}
+
+.submenu_link {
+    color: #6F6E6E;
+    text-decoration: none;
+    transition-property: color, transform;
+    transition-duration: 0.3s;
+    display: inline-block;
+
+    &:hover {
+        color: $main_color;
+        transform: scale(1.2);
+    }
+}
+
+
 @keyframes bounce {
     0% {transform: rotate(0.3turn);}
     50% {}
