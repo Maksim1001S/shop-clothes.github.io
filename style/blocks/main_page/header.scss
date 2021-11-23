@@ -24,6 +24,10 @@
     a {
         margin-right: 33px;
 
+        @media (max-width: $phone_breakpoint) {
+            margin-right: 0;
+        }
+
         &:last-child {
             margin-right: 0px;
         }
@@ -148,4 +152,10 @@
     0% {transform: rotate(0.3turn);}
     50% {}
     100% {transform: rotate(-0.03turn);}
+}
+
+@media (max-width: 735px) {
+    .top_right_nav_hidden {
+        display: none;
+    }
 }

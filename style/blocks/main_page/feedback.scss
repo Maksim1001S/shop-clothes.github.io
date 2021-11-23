@@ -9,12 +9,21 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
+
+        @media (max-width: 1180px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
 
 .reviews {
     text-align: center;
 
+    @media (max-width: 1180px) {
+        margin-bottom: 65px;
+    }
     &_text {
         max-width: 360px;
         font-style: italic;
@@ -24,6 +33,19 @@
         text-align: center;
         color: $dark_color;
         margin-top: 30px;
+
+        @media (max-width: $phone_breakpoint) {
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            max-width: 337px;
+        }
+    }
+    &_img {
+        @media (max-width: $phone_breakpoint) {
+            width: 90px;
+            height: 90px;
+        }
     }
 }
 
@@ -33,12 +55,22 @@
     line-height: 167.2%;
     text-align: center;
 
+    @media (max-width: $phone_breakpoint) {
+        font-size: 14px;
+        line-height: 153.2%;
+    }
+
     &::first-line {
         font-weight: bold;
         font-size: 24px;
         line-height: 167.2%;
         text-align: center;
         color: $dark_color;
+
+        @media (max-width: $phone_breakpoint) {
+            font-size: 24px;
+            line-height: 153.2%;
+        }
     }
 }
 

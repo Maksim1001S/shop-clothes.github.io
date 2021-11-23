@@ -6,9 +6,22 @@
     &_wrap {
         display: flex;
         justify-content: space-between;
+
+        @media (max-width: 1180px) {
+            display: block;
+        }
     }
     &_container {
         text-align: center;
+
+        @media (max-width: 1180px) {
+            margin-bottom: 48px;
+        }
+        &:last-child {
+        @media (max-width: 1180px) {
+            margin-bottom: 0px;
+        }
+        } 
     }
     &_img_box {
         height: 40px;
@@ -19,11 +32,24 @@
         font-size: 19.96px;
         line-height: 24px;
         color: #FBFBFB;
+
+        @media (max-width: 1180px) {
+            margin-bottom: 16px;
+        }
     }
     &_text {
         margin-top: 16px;
         color: #FBFBFB;
-        width: 360px;
+        max-width: 360px;
         padding: 0px 30px;
+
+        @media (max-width: 1180px) {
+            margin: 0 auto;
+            padding: 0;
+        }
+        @media (max-width: $phone_breakpoint) {
+            margin: 0 auto;
+            padding: 0;
+        }
     }
 }
