@@ -8,6 +8,13 @@
         height: 764px;
         background-repeat: no-repeat;
         background-position-x: -225px;
+
+        @media (max-width: 735px) {
+            background-image: none;
+            justify-content: center;
+            align-items: center;
+            height: 363px;
+        }
     }
     &_title {
         margin-top: 290px;
@@ -19,17 +26,46 @@
         line-height: 38px;
         color: $dark_color;
 
+        @media (max-width: 1180px) {
+            font-size: 24px;
+            line-height: 28.8px;
+        }
+        @media (max-width: 735px) {
+            font-size: 20px;
+            line-height: 24px;
+            margin-top: auto;
+
+        }
+
         &_bold {
             font-weight: 900;
             font-size: 48px;
             line-height: 58px;
             color: $dark_color;
+
+            @media (max-width: 1180px) {
+                font-size: 44px;
+                line-height: 52.8px;
+            }
+            @media (max-width: 735px) {
+                font-size: 38px;
+                line-height: 45.6px;
+            }
         }
         &_pink {
             color: $main_color;
             font-weight: bold;
             font-size: 32px;
             line-height: 38px;
+
+            @media (max-width: 1180px) {
+                font-size: 24px;
+                line-height: 28.8px;
+            }
+            @media (max-width: 735px) {
+                font-size: 20px;
+                line-height: 24px;
+            }
         }
     }
 }

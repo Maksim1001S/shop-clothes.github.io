@@ -6,15 +6,32 @@
     &_list {
         display: flex;
         flex-wrap: wrap;
-        gap: 30px;
-    }
+        gap: 28px;
+        justify-content: space-between;
+        display: flex;
+
+        @media (max-width: 1180px) {
+            gap: 18px;
+        }
+        @media (max-width: 735px) {
+            gap: 32;
+            flex-direction: column;
+        }
+        }
     &_item {
-        width: 360px;
+        width: 31.578%;
         height: 260px;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: #C4C4C4;
+
+        @media (max-width: 735px) {
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
 
         a {
             text-decoration: none;

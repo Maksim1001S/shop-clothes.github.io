@@ -3,8 +3,11 @@
     padding: 51px 0px 16px 0px;
 
     &_right {
-        width: 300px;
         display: flex;
+        justify-content: space-between;
+    }
+
+    @media (max-width: $tablet_breakpoint) {
         justify-content: space-between;
     }
 }
@@ -19,7 +22,7 @@ summary {
 }
 
 .details_left {
-    width: 360px;
+    width: 31.578947%;
     position: relative;
 
     &[open] {
@@ -27,6 +30,7 @@ summary {
 
         & .details_left_title {
             color: $main_color;
+            background-color: #fff;
         }
         & .details_left_title_icon {
             fill: $main_color;
@@ -37,29 +41,30 @@ summary {
         z-index: 10;
         background-color: #fff;
         box-sizing: border-box;
-        width: 360px;
+        width: 100%;
         padding: 0px 16px 16px 16px ;
         box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     }
     &_title{
         font-weight: 600;
         color: #000000;
-        background-color: #fff;
+        background-color: transparent;
         padding: 13px 0px 16px 16px;
         position: relative;
         z-index: 20;
 
+
         &_icon {
             margin-left: 11px;
+
+            @media (max-width: $phone_breakpoint) {
+                width: 37.5px;
+                height: 25px;
+                margin-left: 0;
+            }
         }
-        &::after {
-            content: '';
-            width: 15px;
-            height: 10px;
-            display: inline-block;
-            padding-right: 0.5em;
-            background-repeat: no-repeat;
-            margin-left: 11px;
+        @media (max-width: $phone_breakpoint) {
+            font-size: 0px;
         }
     }
 }
@@ -73,6 +78,11 @@ summary {
     transition-property: font-size;
     transition-duration: 0.3s;
 
+    @media (max-width: 550px) {
+        font-size: 12px;
+        line-height: 14px;
+    }      
+
     &:hover {
         font-size: 16px;
     }
@@ -82,6 +92,10 @@ summary {
         flex-direction: column;
         align-items: flex-start;
         margin: 0 auto;
+
+        @media (max-width: 550px) {
+            padding: 24px 5px;
+        }     
     }
 }
 
@@ -104,19 +118,35 @@ summary {
 
 .catalog_products_filter_right {
     margin-left: 30px;
+
+    @media (max-width: $tablet_breakpoint) {
+        margin-left: 0;
+    }      
 }
 
 .details_right {
+    padding: 13px 21px 0px 9px;
+    position: relative;
+    @media (max-width: 550px) {
+        padding-right: 0;
+    }     
+
+    &:last-child {
+        padding-right: 0px;
+    }
 
     &_title {
         color: #6F6E6E;
+        @media (max-width: $phone_breakpoint) {
+            font-size: 12px;
+            line-height: 14px;
+        }        
     
         &::after {
             content: '';
             width: 10px;
             height: 8px;
             display: inline-block;
-            padding-right: 0.5em;
             background-repeat: no-repeat;
             background-image: url(../img/marker_row.svg);
             margin-left: 10px;
@@ -125,6 +155,7 @@ summary {
     &_drop {
         position: absolute;
         z-index: 10;
+        width: 95%;
         background-color: #fff;
         box-sizing: border-box;
         display: flex;
@@ -140,6 +171,10 @@ summary {
             color: #6F6E6E;
             vertical-align: middle;
         }
+
+        @media (max-width: 550px) {
+            padding: 5px;
+        }     
     }
 }
 
